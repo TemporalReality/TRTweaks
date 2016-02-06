@@ -1,0 +1,21 @@
+{
+  "modListVersion": 2,
+  "modList": [{
+    "modid": "TRTweaks",
+    "name": "TRTweaks",
+    "description": "Used by the Temporal Reality Team to add things we need",
+    "version": "1.8.9-1.0.0",
+    "mcversion": "1.8.9",
+    "url": "http://minecraft.curseforge.com/projects/random-mob-events",
+    "updateUrl": "",
+    "authorList": [ "AKTheKnight, The Temporal Reality Team" ],
+    "credits": "Authored by AKTheKnight as part of the Temporal Reality Team",
+    "logoFile": "",
+    "screenshots": [],
+    "parent": "",
+    "requiredMods": [ "Forge" ],
+    "dependencies": [],
+    "dependants": [],
+    "useDependencyInformation": false
+  }]
+}
