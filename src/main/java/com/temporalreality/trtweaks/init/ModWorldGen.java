@@ -1,4 +1,4 @@
-package com.temporalreality.trweaks.init;
+package com.temporalreality.trtweaks.init;
 
 import java.util.Random;
 
@@ -24,7 +24,7 @@ public class ModWorldGen implements IWorldGenerator {
 		this.ymax = ymax;
 		this.veinSize = veinSize;
 		this.veinNumber = veinNumber;
-	    this.gen_ender_ore = new WorldGenMinable(ModBlocks.EnderOre.getDefaultState(), veinSize);
+	    this.gen_ender_ore = new WorldGenMinable(ModBlocks.enderOre.getDefaultState(), veinSize);
 	}
 	
 	@Override

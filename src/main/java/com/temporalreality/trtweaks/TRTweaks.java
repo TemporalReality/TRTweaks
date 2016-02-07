@@ -8,6 +8,7 @@
 
 package com.temporalreality.trtweaks;
 
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,7 +33,7 @@ public class TRTweaks {
 	@SidedProxy(clientSide="com.temporalreality.trtweaks.ClientProxy", serverSide="com.temporalreality.trtweaks.CommonProxy")
 	public static CommonProxy proxy;
 	
-	public static int least;
+	public static int leastDrops;
 	public static int ymin;
 	public static int ymax;
 	public static int veinSize;
@@ -51,4 +52,10 @@ public class TRTweaks {
 	    proxy.init(event);
 	    LOGGER.log(Level.INFO, "Finished Init");
 	}
+
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		proxy.postInit(event);
+	}
+
 }

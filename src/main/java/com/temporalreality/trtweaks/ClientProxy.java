@@ -2,7 +2,7 @@ package com.temporalreality.trtweaks;
 
 import org.apache.logging.log4j.Level;
 
-import com.temporalreality.trweaks.init.RenderInv;
+import com.temporalreality.trtweaks.init.RenderInv;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

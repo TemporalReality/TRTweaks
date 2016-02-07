@@ -4,8 +4,8 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.temporalreality.trweaks.init.ModBlocks;
-import com.temporalreality.trweaks.init.ModWorldGen;
+import com.temporalreality.trtweaks.init.ModBlocks;
+import com.temporalreality.trtweaks.init.ModWorldGen;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -20,9 +20,9 @@ public class CommonProxy {
 		LOGGER.log(Level.INFO, "Starting config init");
 		ConfigHandler.init(e.getSuggestedConfigurationFile());
 		LOGGER.log(Level.INFO, "Finished config init");
-		LOGGER.log(Level.INFO, TRTweaks.least + "");
+		LOGGER.log(Level.INFO, TRTweaks.leastDrops + "");
 		LOGGER.log(Level.INFO, "Starting blocks init");
-		ModBlocks.initEnderOre(TRTweaks.least);
+		ModBlocks.init();
 		LOGGER.log(Level.INFO, "Finished blocks init");
 	}
 	

@@ -16,11 +16,11 @@ public class EnderOre extends Block {
 	private Item drop;
 	private int meta;
 	
-	private int least;
+	private int leastDrops;
 	
-	public EnderOre(int least) {
+	public EnderOre(int leastDrops) {
 		super(Material.rock);
-		this.least = least;
+		this.leastDrops = leastDrops;
 		this.drop = Items.ender_pearl;
 		this.meta = 0;
 		this.setCreativeTab(CreativeTabs.tabBlock);
@@ -42,9 +42,9 @@ public class EnderOre extends Block {
 	@Override
 	public int quantityDropped(IBlockState blockstate, int fortune, Random random) {
 		if (fortune != 0) {
-			return this.least + random.nextInt(fortune);
+			return this.leastDrops + random.nextInt(fortune);
 		}
-		return this.least;
+		return this.leastDrops;
 	}
 
 }

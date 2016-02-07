@@ -1,4 +1,4 @@
-package com.temporalreality.trweaks.init;
+package com.temporalreality.trtweaks.init;
 
 import com.temporalreality.trtweaks.TRTweaks;
 
@@ -11,18 +11,18 @@ public class RenderInv {
 	
 	public static void init() {
 		
-//		InventoryBlockRender(ModBlocks.demoBlock, "demoBlock");
-		InventoryBlockRender(ModBlocks.EnderOre, "enderOre");
+//		registerInvModel(ModBlocks.demoBlock, "demoBlock");
+		registerInvModel(ModBlocks.enderOre, "enderOre");
 		
-//		InventoryItemRender(ModItems.demoItem, "demoItem");
+//		registerInvModel(ModItems.demoItem, "demoItem");
     }
 
-    public static void InventoryBlockRender(Block block, String blockName) {
+    public static void registerInvModel(Block block, String blockName) {
 
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(TRTweaks.MODID + ":" + blockName, "inventory"));
     }
 
-    public static void InventoryItemRender(Item item, String itemName) {
+    public static void registerInvModel(Item item, String itemName) {
 
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(TRTweaks.MODID + ":" + itemName, "inventory"));
     }
