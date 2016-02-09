@@ -20,7 +20,6 @@ public class CommonProxy {
 		LOGGER.log(Level.INFO, "Starting config init");
 		ConfigHandler.init(e.getSuggestedConfigurationFile());
 		LOGGER.log(Level.INFO, "Finished config init");
-		LOGGER.log(Level.INFO, TRTweaks.leastDrops + "");
 		LOGGER.log(Level.INFO, "Starting blocks init");
 		ModBlocks.init();
 		LOGGER.log(Level.INFO, "Finished blocks init");
